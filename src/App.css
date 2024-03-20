@@ -1,0 +1,123 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.induk {
+  height: 100vh;
+  width: 100vw;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 3em;
+}
+
+.editTambahkan{
+  height: 2vw;
+  width: 15vw;
+  margin: 5px 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  font-size: 2em;
+  list-style-type: none;
+  
+}
+
+h2 {
+  font-size: 30px;
+  color: rgb(61, 99, 5);
+  position: absolute;
+  top: 1vw;
+  left: 1vw;
+}
+
+span {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 75%;
+}
+.editHapus{
+  width: 40%;
+  height: 100%;
+}
+
+li {
+  margin: 5px 0 5px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+  align-items: center;
+}
+
+input {
+  margin-right: 7px;
+  height: 2vw;
+  width: 15vw;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+input::placeholder{
+  font-size: 1em;
+}
+
+main {
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .editTambahkan,
+  input,
+  .editHapus {
+    width: 100%;
+  }
+
+  ul {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .editTambahkan,
+  input,
+  .editHapus {
+    width: 100%;
+  }
+
+  ul {
+    font-size: 1em;
+  }
+}
